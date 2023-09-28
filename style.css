@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap');
+
+:root {
+    --bg-color: rgb(26, 25, 25);
+}
+
+body {
+    margin: 40px 80px;
+    padding: 0px;
+    font-family: 'Poppins', 'serif';
+    color: white;
+    background-color: var(--bg-color);
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+}
+
+.options {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: var(--bg-color);
+    list-style: none;
+    z-index: 1;
+}
+
+.options li {
+    display: inline;
+    padding: 20px 5px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+.value{
+    position: relative;
+    margin-top: 40px;
+}
+
+.value h1 {
+    font-size: 70px;
+    margin: 0px;
+    padding-bottom: 0px;
+}
+
+h2 {
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+h2 span {
+    color: orange;
+}
+
+button {
+    background-color: blue;
+    border: none;
+    padding: 10px;
+    box-shadow: 2px 2px orange;
+    color: orange;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.project-grid {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    margin: 10px;
+}
+
+.contact {
+    line-height: 1rem;
+}
+
+.email {
+    color: orange;
+}
+
+
+.socials {
+    display: flex;
+    justify-content: center;
+}
+
+.socials a {
+    margin: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .options {
+        justify-content: center;
+    }
+}
